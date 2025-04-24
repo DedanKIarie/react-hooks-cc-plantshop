@@ -17,7 +17,6 @@ function PlantList({ plants, setPlants, searchQuery }) {
       {filteredPlants.map((plan) => (
         <PlantCard
           key={plan.id}
-          plant={plan}
           name={plan.name}
           image={plan.image}
           price={plan.price}
