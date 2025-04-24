@@ -41,6 +41,7 @@ function NewPlantForm({ onAddPlant }) {
         placeholder="Plant name"
         value={formData.name}
         onChange={handleChange}
+        className="new-plant-form input"
       />
       <input
         type="text"
@@ -48,6 +49,7 @@ function NewPlantForm({ onAddPlant }) {
         placeholder="Image URL"
         value={formData.image}
         onChange={handleChange}
+        className="new-plant-form input"
       />
       <input
         type="number"
@@ -56,8 +58,9 @@ function NewPlantForm({ onAddPlant }) {
         placeholder="Price"
         value={formData.price}
         onChange={handleChange}
+        className="new-plant-form input"
       />
-      <button type="submit" on>Add Plant</button>
+      <button type="submit" on className="new-plant-form button">Add Plant</button>
     </form>
   );
 }
